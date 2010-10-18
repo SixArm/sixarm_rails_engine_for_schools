@@ -1,0 +1,10 @@
+<%
+  school_student||=@school_student
+%>
+<div class="views school_students dl">
+  <dl>
+    <dt><%=t('ID')%></dt><dd><%=h school_student.id %></dd>
+    <dt><%=t('XID')%></dt><dd><%=h school_student.xid %></dd>
+    <dt><%=t('Name')%></dt><dd><%=h school_student.name %></dd>
+  </dl>
+</div>

@@ -1,0 +1,10 @@
+<%
+  school_grade_level||=@school_grade_level
+%>
+<div class="views school_grade_levels dl">
+  <dl>
+    <dt><%=t('ID')%></dt><dd><%=h school_grade_level.id %></dd>
+    <dt><%=t('XID')%></dt><dd><%=h school_grade_level.xid %></dd>
+    <dt><%=t('Name')%></dt><dd><%=h school_grade_level.name %></dd>
+  </dl>
+</div>

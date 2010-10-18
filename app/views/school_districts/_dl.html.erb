@@ -1,0 +1,10 @@
+<%
+  school_district||=@school_district
+%>
+<div class="views school_districts dl">
+  <dl>
+    <dt><%=t('ID')%></dt><dd><%=h school_district.id %></dd>
+    <dt><%=t('XID')%></dt><dd><%=h school_district.xid %></dd>
+    <dt><%=t('Name')%></dt><dd><%=h school_district.name %></dd>
+  </dl>
+</div>

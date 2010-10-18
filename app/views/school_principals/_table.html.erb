@@ -1,0 +1,24 @@
+<%
+  school_principals||=@school_principals
+%>
+<div class="views school_principals table">
+  <table class="data sortable">
+    <thead>
+      <tr>
+        <th><%=t('ID')%></th>
+        <th><%=t('XID')%></th>
+        <th><%=t('Name')%></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% school_principals.each do |x| %>
+        <tr>
+          <td><%=x.id%></td>
+          <td><%=x.xid%></td>
+          <td><%=x.name%></td>
+        </tr>
+      <%  end %>
+    </tbody>
+    <tfoot></tfoot>
+  </table>
+</div>

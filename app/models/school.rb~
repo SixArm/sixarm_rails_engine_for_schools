@@ -1,0 +1,9 @@
+class School < ActiveRecord::Base
+
+  belongs_to :school_district
+  has_many :school_bodies
+  has_many :school_buildings
+  has_many :school_campuses
+  has_many :school_rooms
+
+end
